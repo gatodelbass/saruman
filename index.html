@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+    <div class="container pt-10 md:pt-20 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+            <h1
+                class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                Enter Saruman</h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">we
+                play Metallica stuff.</p>
+
+            <img class="w-96" src="public/small.png" alt="mockup">
+
+
+        </div>
+
+        <!--Right Col-->
+
+        <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+
+
+            <table class="w-full text-sm text-left rtl:text-right text-body">
+                <thead class="bg-neutral-secondary-soft border-b border-default">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 font-medium">
+                            Track / Download
+                        </th>
+                        <th scope="col" class="px-6 py-3 font-medium">
+                            Tempo BPM
+                        </th>
+                        <th scope="col" class="px-6 py-3 font-medium">
+
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-neutral-primary even:bg-neutral-secondary-soft border-b border-default">
+                        <th scope="row" class="px-6 py-2 font-medium text-heading whitespace-nowrap">
+                            <a target="_blank" href="public/Metallica - Enter Sandman -1.00 semitones.mp3"
+                                download>Enter sandman</a>
+                        </th>
+                        <td>
+                            123
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="public/Metallica - Enter Sandman -1.00 semitones.mp3" type="audio/mpeg">
+                            </audio>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr class="odd:bg-neutral-primary even:bg-neutral-secondary-soft border-b border-default">
+                        <th scope="row" class="px-6 py-2 font-medium text-heading whitespace-nowrap">
+                            <a target="_blank" href="public/Metallica - For Whom The Bell Tolls -1.00 semitones.mp3"
+                                download>For whom the bells tolls</a>
+                        </th>
+                        <td>
+                            117
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="public/Metallica - For Whom The Bell Tolls -1.00 semitones.mp3"
+                                    type="audio/mpeg">
+                            </audio>
+                        </td>
+
+                    </tr>
+                    <tr class="odd:bg-neutral-primary even:bg-neutral-secondary-soft border-b border-default">
+                        <th scope="row" class="px-6 py-2 font-medium text-heading whitespace-nowrap">
+                            <a target="_blank" href="public/02. The Memory Remains.mp3" download>Memory remains</a>
+                        </th>
+                        <td>
+                            144?
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="public/02. The Memory Remains.mp3" type="audio/mpeg">
+                            </audio>
+                        </td>
+
+                    </tr>
+                    <tr class="odd:bg-neutral-primary even:bg-neutral-secondary-soft border-b border-default">
+                        <th scope="row" class="px-6 py-2 font-medium text-heading whitespace-nowrap">
+                            <a target="_blank" href="public/Metallica - Creeping Death -1.00 semitones.mp3"
+                                download>Creeping death</a>
+                        </th>
+                        <td>
+                            196
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="public/Metallica - Creeping Death -1.00 semitones.mp3" type="audio/mpeg">
+                            </audio>
+                        </td>
+
+                    </tr>
+                    <tr class="odd:bg-neutral-primary even:bg-neutral-secondary-soft border-b border-default">
+                        <th scope="row" class="px-6 py-2 font-medium text-heading whitespace-nowrap">
+                            <a target="_blank"
+                                href="public/Chuck Billy (Testament), Jake E. Lee, JOCHEN FLACH - Seek & Destroy -1.00 semitones.mp3"
+                                download> Seek and destroy</a>
+                        </th>
+                        <td>
+                            140 - 202
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source
+                                    src="public/Chuck Billy (Testament), Jake E. Lee, JOCHEN FLACH - Seek & Destroy -1.00 semitones.mp3"
+                                    type="audio/mpeg">
+                            </audio>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+        <!--Footer-->
+        <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+            <div>
+                <img class="w-96 mx-auto" :src="'/images/cardsteal.png'" />
+            </div>
+            <p class="text-gray-400">
+                Contact at
+                <span class="">
+                    e.saruman@gmail.com</span>
+            </p>
+
+            <p class="text-gray-400">
+                <a target="_blank" href="https://www.facebook.com" class="text-sky-600 font-semibold tracking-wider">
+                    Facebook page
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
