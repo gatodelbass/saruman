@@ -2,6 +2,9 @@
 import { Head, Link } from '@inertiajs/vue3';
 import { dashboard, login, register } from '@/routes';
 
+import { usePage } from '@inertiajs/vue3'
+import { ZiggyVue } from 'ziggy-js';
+
 withDefaults(
     defineProps<{
         canRegister: boolean;
@@ -218,40 +221,28 @@ withDefaults(
             <div class="grid grid-cols-1">
                 <h1 class="text-2xl font-bold">Staff</h1>
 
+               <Link  :href="('staff.elgato')"  >
+                    
                 <div
-                    class="text-jost relative m-2 w-64 rounded border-1 border-gray-900 bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 break-words shadow-lg"
+                    class="text-jost relative m-2 w-64 rounded border-1 border-gray-700 bg-gradient-to-br from-gray-700 via-black to-gray-900 break-words shadow-lg"
                 >
-                    <div class="px-0">
-                       
-                        <div class="mt-2 text-center items-center justify-center">
-                            <img
-                                        src="https://media.tenor.com/xQM3D2rSud0AAAAM/shocked-cat.gif"
-                                        class="w-24 m-4 rounded-full border-2 border-gray-700 p-1 align-middle "
-                                    />
-                            <h3
-                                class="mb-1 text-2xl leading-normal font-bold text-slate-700"
-                            >
-                                <span class="text-2xl">El gato</span>
-                            </h3>
-                        </div>
-
-                        <div
-                            class="mt-2 border-t border-slate-200 py-4 text-center text-sm"
+                    <div class="mt-2 items-center justify-center text-center">
+                        <img
+                            src="https://media.tenor.com/xQM3D2rSud0AAAAM/shocked-cat.gif"
+                            class="m-4 w-24 rounded-full border-2 border-gray-700 p-1 align-middle"
+                        />
+                        <h3
+                            class="mb-1 text-2xl leading-normal font-bold text-slate-500"
                         >
-                            <div
-                                class="flex w-full flex-wrap justify-center "
-                            >
-                               some text
-                            </div>
-
-                       
-                        
-
-                           
-                        </div>
+                            El gato
+                        </h3>
                     </div>
                 </div>
+                
+                </Link>
+
             </div>
         </div>
     </div>
+    <router-view />
 </template>
